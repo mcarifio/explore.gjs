@@ -7,6 +7,9 @@ I experiment with gnome and gnome javascript (gjs) in this repository; learn by 
 [gjs](https://gjs-docs.gnome.org/gjs/) is gnome's javascript interpreter and runtime. It's ES6-like, and now supports ES6 modules.
 It has a [guide](https://gjs.guide/guides/) and the beginnings of [a book](https://rmnvgr.gitlab.io/gtk4-gjs-book/). When you install gnome, you get gjs and it's "supporting objects".
 
+## gjs
+
+* [gjs-jasmine](https://github.com/ptomato/jasmine-gjs) for testing
 
 ## gnome
 

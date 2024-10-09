@@ -1,5 +1,8 @@
-#!/usr/bin/env gjs
+#!/usr/bin/env -S gjs -m
+// https://gjs-docs.gnome.org/gjs/esmodules.md
 
-import s from 'system';
-console.log('here');
-s.exit(0);
+import system from 'system';
+// https://gjs-docs.gnome.org/gjs/logging.md
+console.log(system.programPath, ARGV);
+console.log(system.programInvocationName);
+system.exit(0);

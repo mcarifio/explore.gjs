@@ -4,6 +4,13 @@ export PROJECT=$(realpath -Lm $(dirname ${BASH_SOURCE%*/}))
 export PJROOT=${PROJECT}/.spjs
 PATH_add $(find ${PJROOT} -type d -name bin) # depth first order
 
+(
+    declare -a _missing=()
+    for _c in gjs jasmine; do has ${_c} || _missing+=( ${_c} ); done
+    (( ${#_missing[@]} )) && { printf '%s ' ${_missing[*]}; echo " not on path?"; }
+)
+    
+
 # first time setup
 (
     _log="${PJROOT}/log/pj-setup.sh.log"
