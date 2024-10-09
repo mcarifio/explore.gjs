@@ -1,0 +1,17 @@
+# ln -sr .spjs/pj/bin/envrc .envrc; direnv allow .
+
+export PROJECT=$(realpath -Lm $(dirname ${BASH_SOURCE%*/}))
+export PJROOT=${PROJECT}/.spjs
+PATH_add $(find ${PJROOT} -type d -name bin)
+
+# first time setup
+[[ -f "${PJROOT}/log/pj-setup.sh.log" ]] && return 0
+if has pj-setup.sh; then
+  echo "running $(type -P pj-setup.sh) first time" >&2
+  mkdir -pv ${PJROOT}/log
+  pj-setup.sh > ${PJROOT}/log/pj-setup.sh.log || echo "\n*** see ${PJROOT}/log/pj-setup.sh.log for issues ***\n" >&2
+fi
+
+   
+
+
