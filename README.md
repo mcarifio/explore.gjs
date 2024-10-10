@@ -15,6 +15,7 @@ It has a [guide](https://gjs.guide/guides/) and the beginnings of [a book](https
 
 * [gnome dev](https://apps.gnome.org/#development) including the api resource [Devhelp](https://apps.gnome.org/Devhelp/)
 * [getting started](https://developer.gnome.org/documentation/tutorials/beginners/getting_started.html), a part of the [platform documentation](https://developer.gnome.org/documentation/introduction.html) alongside additional [tutorials](https://developer.gnome.org/documentation/tutorials.html)
+* [deno_gi](https://deno.land/x/deno_gi@v0.5.0)
 * [gtk4+rust](https://gtk-rs.org/gtk4-rs/stable/latest/book/)
 * [reddit r/gnome](https://www.reddit.com/r/gnome)
 * [gnome discourse](https://discourse.gnome.org/)
@@ -30,5 +31,7 @@ It has a [guide](https://gjs.guide/guides/) and the beginnings of [a book](https
 ## todo
 
 * gjs in typescript say using the [swc compiler](https://swc.rs/) and perhaps https://gjsify.org/? More at https://blogs.gnome.org/christopherdavis/2022/08/25/trying-typescript-for-gnome-apps/ and perhaps https://github.com/gjsify/ts-for-gir
+* can gjs, deno, bun and nodejs all run the same script (appropriately written)?
+
 
 
